@@ -28,5 +28,9 @@ public class Curso {
         this.aulas.add(aula);
     }
 
+    public int getTotalTempo(){
+        return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+    }
+
 
 }
